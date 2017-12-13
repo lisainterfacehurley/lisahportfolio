@@ -1,0 +1,199 @@
+       #container{
+                background-color: rgb(48, 51, 109);
+                width: 100%;
+                height: 100%;
+                perspective: 1000px;
+            }
+            
+            .card{
+                display: inline-block;
+                transform-style: preserve-3d;
+                width: 31vw;
+                height: 40.25vh;
+                padding-left: 8px;
+                margin: 15px;
+                position: relative;
+                box-sizing: border-box;
+                color: white;
+                transition: transform 2s;
+            }
+            
+            .flipOver{
+                transform: rotateY(-180deg);
+             }
+            
+            .front{
+                position: absolute;
+                width: 30vw;
+                height: 40.25vh;
+                background-size: cover;
+            }
+            
+            .back{
+                position: absolute;
+                width: 30vw;
+                height: 40.25vh;
+                transform: translateZ(-1px) rotateY(180deg);
+                background-size: cover;
+            }
+            
+            #pfront1{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+            
+            #pback1{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+             #pfront2{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+            
+            #pback2{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+             #pfront3{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+            
+            #pback3{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+            #pfront4{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+           
+            #pback4{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+              #pfront5{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+            
+            #pback5{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+            #pfront6{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+           
+            #pback6{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+             #pfront7{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+           
+            #pback7{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+            #pfront8{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+           
+            #pback8{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+            #pfront9{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+           
+            #pback9{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+            #pfront10{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+           
+            #pback10{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+            #pfront11{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+           
+            #pback11{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+            #pfront12{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+           
+            #pback12{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+            #pfront13{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+           
+            #pback13{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+            #pfront14{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+           
+            #pback14{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+            #pfront15{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+           
+            #pback15{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+            #pfront16{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+           
+            #pback16{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+            #pfront17{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+           
+            #pback17{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+            #pfront18{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+           
+            #pback18{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+            h1{
+                color: rgb(141, 198, 63);
+                text-align: center;
+                font-size: 72px;
+              }
+            h2{
+                color: rgb(48, 51, 109);
+                text-align: center;
+                font-size: 72px;
+            }
+            p{
+             color: rgb(48, 51, 109);
+             font-size: 24px;
+             margin: 8px;    
+            }
+            li{
+             color: rgb(48, 51, 109);
+             font-size: 24px;
+             margin: 8px;    
+            }  
+ a{
+               text-decoration: none;
+               background-color: rgb(48, 51, 109);
+               font-size: 23.2px;
+               color: rgb(141, 198, 63);
+               border-style: ridge;
+               border-width: 6px;
+               border-color: rgb(141, 198, 63);
+               padding-left: 2px;
+               padding-right: 2px;
+               position: absolute;
+               bottom: 0;
+               left: 0; 
+            }
