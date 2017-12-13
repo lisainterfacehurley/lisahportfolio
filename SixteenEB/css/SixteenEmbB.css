@@ -1,0 +1,41 @@
+.navbar{
+                background-color: rgb(172, 211, 115);
+                }
+            .navbar-brand{
+                color: white;
+            }
+            .nav-link{
+                color: white;
+            }
+            h1{
+               background-color: rgb(172, 211, 115);
+                border: 20px solid green;
+                text-align: center;
+            }
+            .contact{
+                background-color: rgb(172, 211, 115);
+                border: 20px solid green;
+                text-align: center;    
+            }
+            .col{
+                background-color: lightgreen; 
+                border: 40px solid green;
+            }
+          
+            .jumbotron{
+                 background-color: rgb(154,189,103);
+            }
+      a{
+               text-decoration: none;
+               background-color: rgb(154,189,103);
+               font-size: 23.2px;
+               color: white;
+               border-style: ridge;
+               border-width: 6px;
+               border-color: rgb(172, 211, 115);
+               font-family:  "Droid Serif";
+               padding-left: 2px;
+               padding-right: 2px;
+               bottom: 0;
+               right: 0; 
+            }   
