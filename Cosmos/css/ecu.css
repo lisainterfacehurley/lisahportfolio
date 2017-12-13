@@ -1,0 +1,42 @@
+ #bigImage{
+                width: 1578px;
+                height: 600px;
+                transform: translate(10%, 0%);
+            }
+             
+          body{
+                background-color: green;
+            }
+           h1{
+               color: limegreen;
+               text-align: center;
+               font-size: 48px;
+           }
+          h2{
+               color: limegreen;
+               text-align: center; 
+               font-size: 32px;
+           }
+            .thumbnail{
+                width: 310px;
+                height: 250px;
+                cursor: pointer;
+            }
+            
+            .thumbnail:hover{
+                opacity: 0.5;
+            }
+a{
+               text-decoration: none;
+               background-color: dark green;
+               font-size: 23.2px;
+               color: limegreen;
+               border-style: ridge;
+               border-width: 6px;
+               border-color: limegreen;
+               padding-left: 2px;
+               padding-right: 2px;
+               position: absolute;
+               top: 0;
+               right: 0; 
+            }
