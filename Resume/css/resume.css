@@ -1,0 +1,31 @@
+ body{
+                background-image: url("../Resume/images/bluebg.jpg");
+                background-repeat: no-repeat;
+                background-image-opacity: 0.50; 
+                background-size: cover;
+                color: navy;
+                font-family: 'Abril Fatface', cursive;
+                font-size: 20px;
+            }
+            h1{
+               font-size: 60px;
+               text-align: center;
+                
+            }
+            h3, h4{
+               text-decoration: underline; 
+            }
+a{
+               text-decoration: none;
+               background-color: blue;
+               font-size: 23.2px;
+               color: navy;
+               border-style: ridge;
+               border-width: 6px;
+               border-color: navy;
+               ont-family: 'Abril Fatface', cursive;
+               padding-left: 2px;
+               padding-right: 2px;
+               bottom: 0;
+               left: 0; 
+            }
