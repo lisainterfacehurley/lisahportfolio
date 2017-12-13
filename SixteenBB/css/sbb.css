@@ -1,0 +1,14 @@
+ a{
+               text-decoration: none;
+               background-color: lightgray;
+               font-size: 23.2px;
+               color: black;
+               border-style: ridge;
+               border-width: 6px;
+               border-color: black;
+               padding-left: 2px;
+               padding-right: 2px;
+               position: absolute;
+               bottom: 0;
+               right: 0; 
+            }
