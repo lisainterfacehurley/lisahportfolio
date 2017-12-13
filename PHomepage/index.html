@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <!-- page loading -->
+    <script type="text/javascript" src="js/pace.js"></script>
+    <!-- css styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slicknav.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/animation-without-delay.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    
+    <link href="css/resume.css" type="text/css" rel="stylesheet"/>
+    <link href="css/education.css" type="text/css" rel="stylesheet"/>
+    <link href="css/mpsg.css" type="text/css" rel="stylesheet"/>
+    <link href="css/ffp.css" type="text/css" rel="stylesheet"/>
+    <link href="css/bgstyles.css" type="text/css" rel="stylesheet"/>
+    <link href="css/sbb.css" type="text/css" rel="stylesheet"/>
+    <link href="css/default.css" type="text/css" rel="stylesheet"/>
+    <link href="css/sixteenEmbB.css" type="text/css" rel="stylesheet"/>
+    <link href="css/obc.css" type="text/css" rel="stylesheet"/>
+    <link href="css/ffc.css" type="text/css" rel="stylesheet"/>
+    <link href="css/ipc.css" type="text/css" rel="stylesheet"/>
+    <link href="css/sixteenjq.css" type="text/css" rel="stylesheet"/>
+    <link href="css/ecu.css" type="text/css" rel="stylesheet"/>
+    <link href="css/bnc.css" type="text/css" rel="stylesheet"/>
+    <link href="css/nc.css" type="text/css" rel="stylesheet"/>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/respond.js"></script>
+    <script type="text/javascript" src="js/caroufredsel.js"></script>
+    
+    <style>
+header{
+	color: rgb(37, 170, 225);
+	height: 112px;
+	line-height: 112px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+header nav{
+	float: right;
+	font-weight: bold;
+   
+}
+
+header nav ul li{
+	padding-left: 30px;
+}
+
+header nav ul li a{
+	color: rgb(241,89,42);
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+
+header nav ul li a:hover, header nav ul li a:focus{
+	color: rgb(241,89,42);
+	text-decoration: none;
+}
+body{
+     background-color: rgb(48, 51, 109);
+}
+h1, h3{
+     color: rgb(255, 255, 255); 
+}
+.thumb{
+      height: 280px;
+      width: 280px;
+        }
+.button{
+      display: block;
+      height: 36px;
+      width: 200px;
+      background-color: rgb(141, 198, 63);
+      border: 2px solid rgb(241, 89, 42);
+      color: rgb(241, 89, 42);
+      text-align: center;
+      font-size: 24px;
+      }
+a.button{
+      text-decoration: none;
+      }
+.copyright{
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: 600;
+     }
+ /***** slider section *****/       
+
+.slider,.slider ul.slider-carousel, .slider ul.slider-carousel li{
+	height: 600px;
+	width: 100%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+.slider ul.slider-carousel li h1{
+	margin-top: 150px;
+	margin-bottom: 30px;
+	color: rgb(255, 255, 255);
+}
+
+.slider ul.slider-carousel li p{
+	margin-bottom: 50px;
+}
+
+.slider ul.slider-carousel li a{
+	padding: 10px 50px;
+	margin-right: 30px;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-o-transition:all 0.3s ease-in;
+}
+
+.slider ul.slider-carousel li a:last-child{
+	margin-right: 0px;
+}
+
+.img1{
+	background:url("../PHomepage/images/slider/interface1.jpg");
+	background-size: 100% 100%;
+}
+
+.img2{
+	background:url("../PHomepage/images/slider/htmlcss.jpg");
+	background-size: 100% 100%;
+}
+
+.img3{
+	background:url("../PHomepage/images/slider/code2.jpg");
+	background-size: 100% 100%;
+}
+
+ .img4{
+	background:url("../PHomepage/images/slider/w3schools.jpg");
+	background-size: 100% 100%;
+}
+
+.img5{
+	background:url("../PHomepage/images/slider/udemy.jpg");
+	background-size: 100% 100%;
+}       
+.slider ul.slider-carousel li a.cta1:hover{
+	background-color: rgb(37, 170, 225);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.slider ul.slider-carousel li a.cta2:hover{
+	background-color: rgb(37, 170, 225);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.slider ul.sliderpager li{
+	padding: 0 3px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.slider ul.sliderpager li a{
+	color: rgb(141, 198, 63);
+}
+
+.slider ul.sliderpager li.selected a{
+	color: rgb(241, 89, 42);
+}
+/***** responsive css *****/ 
+.slicknav_menu{
+	display: none;
+}
+
+@media screen and (max-width: 992px){
+
+	.slider{
+		margin-top: 112px;
+	}
+
+	header{
+		margin-top: -112px;
+		background-color: rgb(141, 198, 63);
+	}
+
+	#menu{
+		display: none;
+	}
+	.slicknav_menu{
+		display: inline-block;
+		position: fixed;
+		background:rgba(0,0,0,0);
+		z-index: 1000;
+		right: 0px;
+		margin-top: -112px;
+	}
+
+	.slicknav_btn{
+		background-color: rgb(241, 89, 42);
+		margin: 35px 30px 0 0;
+	}
+
+	.slicknav_nav{
+		background: rgb(37,170,225);
+		width: 200px;
+	}
+
+	.slicknav_nav li{
+		margin: 0;
+		padding:0;
+		height: 3em;
+		line-height: 3em;
+		width: 200px;
+		border-bottom: 1px solid rgb(141,198,63);
+		border-top: 1px solid rgb(141,198,63);
+		text-align: center;
+	}
+
+	.slicknav_nav li a{
+		margin: 0;
+		padding:0;
+	}
+
+	.slicknav_nav li a:hover{
+		color: rgb(141,198,63);
+		background-color: rgba(0,0,0,0);
+	}
+
+	.slider,.slider ul.slider-carousel, .slider ul.slider-carousel li{
+		height: 450px;
+	}
+
+	.slider ul.slider-carousel li h1{
+		margin-top: 100px;
+		margin-bottom: 30px;
+	}
+    .inner-content{
+        height: 200px;
+        width: 200px; 
+    }
+	/** portfolio responsive styles ***/
+   
+	.portfolio{
+		background: none;
+		background-color: rgb(48, 51, 109);
+        text-align: center;
+	}
+
+	.portfolio-carousel li{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.portfolio-carousel h3{
+		font-size: 14px;
+	}
+
+	.portfolio .inner-content{
+		width: 200px;
+		height: 180px;
+	}
+	
+	/*** footer ***/
+	footer{
+		text-align: center;
+	}
+}
+
+	@media screen and (max-width: 800px){
+
+		.portfolio-carousel h3{
+			font-size: 12px;
+		}
+
+	.portfolio .inner-content{
+			width: 180px;
+			height: 150px;
+		}
+
+		.portfolio li p{
+			font-size: 12px;
+		}
+
+		
+@media screen and (max-width: 550px){
+
+	h1{
+		font-size: 30px;
+	}
+	.slider,.slider ul.slider-carousel, .slider ul.slider-carousel li{
+		height: 380px;
+	}
+
+	.slider ul.slider-carousel li h1{
+		margin-top: 70px;
+		margin-bottom: 30px;
+	}
+
+	}
+
+@media screen and (max-width: 420px){
+
+	h1{
+		font-size: 24px;
+	}
+	.slider ul li a{
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.slider ul.slider-carousel li h1{
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+}
+   
+    </style>
+    
+</head>
+<body id="main">
+<! -- body content -- >
+    <div class="entire-content">
+    <header>
+        <div class="container">
+            <div class="row">
+                 
+                <nav class="animation" data-animation="fadeInRight">
+                    <ul class="menu" id="menu">
+                        <li class="active"><a href="#slider"></a></li>
+                        <li><a href="resume.html"></a></li>
+                        <li><a href="#education"></a></li>
+                        <li><a href="#projects"></a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+    
+     <section class="slider" id="slider">
+      <ul class="slider-carousel" id="slider-carousel">
+        <li class="img1" img src="../PHomepage/images/slider/interface1.jpg">
+        </li>
+        <li class="img2" img src="../PHomepage/images/slider/htmlcss.jpg">
+        </li>
+        <li class="img3" img src="../PHomepage/images/slider/code2.jpg">
+        </li>
+        <li class="img4" img src="../PHomepage/images/slider/w3schools.jpg">
+        </li>
+        <li class="img5" img src="../PHomepage/images/slider/udemy.jpg">
+        </li>   
+       </ul>
+         <ul class="sliderpager">
+         <li><a href="#"><i class="fa fa-circle"></i></a></li>
+             <li><a href="#"><i class="fa fa-circle"></i></a></li>
+             <li><a href="#"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#"><i class="fa fa-circle"></i></a></li>
+             <li><a href="#"><i class="fa fa-circle"></i></a></li>
+        </ul>
+      </section>
+       <section class="portfolio section-padding" data-stellar-background-ratio="0.5" id="portfolio">
+          <div class="animation" data-animation="fadeInLeft">
+          <div class="portfolio-header">
+           <h1 class="White">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*My Resume*&nbsp;&nbsp;&nbsp;&nbsp;*My Web Development & Coding Education* &nbsp;&nbsp;&nbsp;&nbsp;*My Portfolio Steps & Goals* &nbsp;&nbsp;&nbsp;&nbsp;*Corporate*</h1>
+          </div>
+    
+        <div class="container">
+        <div class="row">
+            <div class="animation" data-animation="fadeInUp">
+         <ul class="portfolio-carousel">   
+          <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/resume.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>My Resume</h3>
+                    <a href="../pages/resume.html" class="button">Click for details </a>
+                </div>
+                   </div>
+            
+             </li>
+              <li>
+            <div class="inner-content">
+             <img src="../PHomepage/images/if.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>My Education</h3>
+                      <a href="../pages/education.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/portfolio.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>My Portfolio </h3>
+                       <a href="../pages/mpsg.html" class="button">Click for details</a>
+              </div>
+                   </div> 
+             </li>
+              <li>
+            <div class="inner-content">
+                <span></span><img src="../PHomepage/images/corp.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Corporate Project</h3>
+                       <a href="../pages/MinCorporate.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+             <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/resume.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>My Resume</h3>
+                       <a href="../pages/resume.html" class="button">Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/if.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>My Education</h3>
+                       <a href="../pages/education.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/portfolio.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>My Portfolio </h3>
+                       <a href="../pages/mpsg.html" class="button">Click for details</a>
+              </div>
+                   </div> 
+             </li>
+             <li>
+            <div class="inner-content">
+                <span></span><img src="../PHomepage/images/corp.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Corporate Project</h3>
+                       <a href="../pages/MinCorporate.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+            </ul>
+            <ul class="portfolio-nav">
+                <li id="prev">&lt;</li>
+                <li id="next">&gt;</li>
+            </ul>
+            </div>
+         </div>
+         </div>
+          </div>     
+    </section>  
+        
+       <section class="portfolio section-padding" data-stellar-background-ratio="0.5" id="portfolio2">
+          <div class="animation" data-animation="fadeInLeft">
+          <div class="portfolio-header">
+           <h1 class="White">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Fall Flower Preparation* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Breakout Game*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Sixteen Mobile*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Sixteen Desktop*</h1>
+          </div>
+    
+        <div class="container">
+        <div class="row">
+            <div class="animation" data-animation="fadeInUp">
+         <ul class="portfolio-carousel">   
+          <li>
+            <div class="inner-content">
+                <img src="../FallFlowerP/images/FlowersbyWhiteFence.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Fall Flower Preparation</h3>
+                       <a href="../pages/ffp.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/game.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Breakout Game</h3>
+                       <a href="../pages/bg.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/sixteen1.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Sixteen Mobile</h3>
+                       <a href="../pages/sixm.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>
+              <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/sixteen2.jpg" class="thumb" />
+                <div class="overlay-content">
+                       <h3>Sixteen Desktop</h3>
+                       <a href="../pages/sixd.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+             <li>
+            <div class="inner-content">
+               <img src="../FallFlowerP/images/FlowersbyWhiteFence.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Fall Flower Preparation</h3>
+                       <a href="../pages/ffp.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+              <li>
+            <div class="inner-content">
+           <img src="../PHomepage/images/game.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Breakout Game</h3>
+                       <a href="../pages/bg.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/sixteen1.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Sixteen Mobile</h3>
+                       <a href="../pages/sixm.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>
+             <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/sixteen2.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Sixteen Desktop</h3>
+                       <a href="../pages/sixd.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+            </ul>
+            <ul class="portfolio-nav">
+                <li id="prev2">&lt;</li>
+                <li id="next2">&gt;</li>
+            </ul>
+            </div>
+         </div>
+         </div>
+          </div>     
+    </section>  
+        
+     <section class="portfolio section-padding" data-stellar-background-ratio="0.5" id="portfolio3">
+          <div class="animation" data-animation="fadeInLeft">
+          <div class="portfolio-header">
+           <h1 class="White">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Sixteen Basic Bootstrap* &nbsp;&nbsp;&nbsp;&nbsp;*Sixteen Embellished Bootstrap* &nbsp;&nbsp;&nbsp;&nbsp;*Omaha's Best Coffee*&nbsp;&nbsp;&nbsp;&nbsp;*Fall Flipping Cards*</h1>
+          </div>
+    
+        <div class="container">
+        <div class="row">
+            <div class="animation" data-animation="fadeInUp">
+         <ul class="portfolio-carousel">   
+          <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/sixteen5.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Sixteen Basic Bootstrap</h3>
+                       <a href="../pages/sbb.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+              <li>
+            <div class="inner-content">
+                  <img src="../PHomepage/images/sixteen3.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Sixteen Emb. Bootstrap</h3>
+                       <a href="../pages/sixteenembb.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/ob.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Omaha's Best Coffee</h3>
+                       <a href="../pages/obc.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>
+              <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/fall.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Fall Flipping Cards</h3>
+                       <a href="../pages/ffc.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+             <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/sixteen5.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Sixteen Basic Bootstrap</h3>
+                       <a href="../pages/sbb.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/sixteen3.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Sixteen Emb.Bootstrap</h3>
+                       <a href="../pages/sixteenembb.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/ob.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Omaha's Best Coffee</h3>
+                       <a href="../pages/obc.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>
+             <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/fall.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Fall Flipping Cards</h3>
+                       <a href="../pages/ffc.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+            </ul>
+            <ul class="portfolio-nav">
+                <li id="prev3">&lt;</li>
+                <li id="next3">&gt;</li>
+            </ul>
+            </div>
+         </div>
+         </div>
+          </div>     
+    </section>      
+         
+     <section class="portfolio section-padding" data-stellar-background-ratio="0.5" id="portfolio4">
+          <div class="animation" data-animation="fadeInLeft">
+          <div class="portfolio-header">
+           <h1 class="White">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Interface Photo Cube*&nbsp;&nbsp;&nbsp;&nbsp;Sixteen Project +jQuery*&nbsp;&nbsp;&nbsp;&nbsp;*Everything is Coming Up Cosmos*&nbsp;&nbsp;&nbsp;&nbsp;*New Coffee*</h1>
+          </div>
+    
+        <div class="container">
+        <div class="row">
+            <div class="animation" data-animation="fadeInUp">
+         <ul class="portfolio-carousel">   
+          <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/if2.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Interface Photo Cube</h3>
+                       <a href="../pages/ipc.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/sixteen6.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Sixteen Project +jQuery</h3>
+                       <a href="../pages/sixteenjq.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/cosmos.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Coming Up Cosmos</h3>
+                       <a href="../pages/ecuc.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>
+              <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/images1.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Basic New Coffee</h3>
+                       <a href="../pages/bnc.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+             <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/images3.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>New Coffee is Coming!</h3>
+                       <a href="../pages/nc.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             
+             </li>
+              <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/if2.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Interface Photo Cube</h3>
+                       <a href="../pages/ipc.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+                 <img src="../PHomepage/images/sixteen6.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Sixteen Project +jQuery</h3>
+                       <a href="../pages/sixteenjq.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>
+             <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/cosmos.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>Coming Up Cosmos</h3>
+                       <a href="../pages/ecuc.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             </li>
+             <li>
+            <div class="inner-content">
+              <img src="../PHomepage/images/images1.jpg" class="thumb"/>
+                   <div class="overlay-content">
+                       <h3>Basic New Coffee</h3>
+                       <a href="../pages/bnc.html" class="button" >Click for details</a>
+              </div>
+                   </div> 
+             </li>
+             <li>
+            <div class="inner-content">
+                <img src="../PHomepage/images/images3.jpg" class="thumb"/>
+                <div class="overlay-content">
+                       <h3>New Coffee is Coming!</h3>
+                       <a href="../pages/nc.html" class="button" >Click for details</a>
+                </div>
+                   </div>
+             </li>
+            </ul>
+            <ul class="portfolio-nav">
+                <li id="prev4">&lt;</li>
+                <li id="next4">&gt;</li>
+            </ul>
+            </div>
+         </div>
+         </div>
+          </div>     
+    </section>
+    <br/>
+    <br/>
+    <div class="copyright">
+        <p>Copyright &copy; Lisa's Portfolio. All Rights Reserved.</p>
+        </div>
+       </div>
+    <! --javascripts -->
+    
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript" src="js/stellar.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>    
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>
