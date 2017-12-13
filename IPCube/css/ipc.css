@@ -1,0 +1,106 @@
+  #next, #prev{
+                background-color: rgb(241, 89, 42);
+            }
+            #container{
+                width: 100%;
+                height: 100vh;
+                perspective: 1000px;
+                background-color: rgb(48, 51,109);
+            }
+            h1{
+                font-size: 60px;
+                text-align: center;
+                color: rgb(141, 198, 63);
+            }
+            .cube{
+                transform-style: preserve-3d;
+                width: 20vw;
+                height: 20vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transition: transform 1s;
+                transform: translate(-50%, -50%);
+            }
+            .seeFront{
+                transform: translate(-50%, -50%);
+            }
+            .seeTop{
+                transform: translate(-50%, -50%) rotateX(-90deg);
+            }
+            .seeBottom{
+                transform: translate(-50%, -50%) rotateX(90deg);
+            }
+            .seeBack{
+                transform: translate(-50%, -50%) rotateY(180deg);
+            }
+            .seeLeft{
+                transform: translate(-50%, -50%) rotateY(90deg);
+            }
+            .seeRight{
+                transform: translate(-50%, -50%) rotateY(-90deg);
+            }
+            .cubeSide{
+                position: absolute;
+                width: 20vw;
+                height: 20vw;
+                color: white;
+            }
+            .front{
+                transform: translateZ(10vw);
+            }
+            .back{
+                transform: rotateY(-180deg) translateZ(10vw);
+            }
+            .top{
+                transform: rotateX(90deg) translateZ(10vw);
+            }
+            .bottom{
+                transform: rotateX(-90deg) translateZ(10vw);
+            }
+            .left{
+                transform: rotateY(-90deg) translateZ(10vw);
+            }
+            .right{
+                transform: rotateY(90deg) translateZ(10vw);
+            }
+            .cubeImage{
+                width: 20vw;
+                height: 20vw;
+                background-size: cover;
+            }
+             #image1{
+                background-image: url("../IPCube/images/image1.jpg");
+            }
+            #image2{
+
+                background-image: url("../IPCube/images/image2.jpg");
+            }
+            #image3{
+
+                background-image: url("../IPCube/images/image3.jpg");
+            }
+            #image4{
+
+                background-image: url("../IPCube/images/image4.jpg");
+            }
+            #image5{
+                background-image: url("../IPCube/images/image5.jpg");
+            }
+            #image6{
+                background-image: url("../IPCube/images/image6.jpg");
+            }
+a{
+               text-decoration: none;
+               background-color: rgb(48, 51,109);
+               font-size: 23.2px;
+               color: rgb(141, 198, 63);
+               border-style: ridge;
+               border-width: 6px;
+               border-color: rgb(141, 198, 63);
+               padding-left: 2px;
+               padding-right: 2px;
+               position: absolute;
+               bottom: 0;
+               left: 0; 
+            }
