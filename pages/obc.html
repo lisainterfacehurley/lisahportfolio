@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<meta charset= "UTF-8">
+<meta name= "vieport" content="width=device-width, initial-scale= 1.0">
+<meta hyyp-equiv= "X-UA-Compatible" content= "ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet">
+<link href="css/obc.css" type="text/css" rel="stylesheet"/>
+<style>
+ body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family: 'Changa One', cursive;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url("../OBCoffee/images/pimg1.jpg");
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url("../OBCoffee/images/pimg2.jpg");
+  min-height:500px;
+}
+
+.pimg3{
+  background-image:url("../OBCoffee/images/pimg3.jpg");
+  min-height:500px;
+}
+.pimg1{
+  background-image:url("../OBCoffee/images/pimg1.jpg");
+  min-height:100%;
+}    
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:rgb(255, 127, 40);
+  color:rgb(53, 45, 40);
+}
+
+.section-dark{
+  background-color:rgb(53, 45, 40);
+  color:rgb(255, 127, 40);
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color: rgb(255, 96, 0);
+  font-size:30px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:rgb(255, 96, 0);
+  color:rgb(0, 0, 0);
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+ 
+p{
+   font-size: 20px;     
+}
+     
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+} 
+ a{
+               text-decoration: none;
+               background-color: rgb(255, 127, 40);
+               font-size: 23.2px;
+               color: rgb(53, 45, 40);
+               border-style: ridge;
+               border-width: 6px;
+               border-color: rgb(53, 45, 40);
+               font-family: 'Changa One', cursive;
+               padding-left: 2px;
+               padding-right: 2px;
+               position: absolute;
+               bottom: 0;
+               left: 0; 
+            }    
+    </style>
+</head>
+    <body>
+   <div class="pimg1" img src="../OBCoffee/images/pimg1.jpg">
+        <div class="ptext">
+            <span class="border">
+            Omaha's Best Coffee
+            </span>
+       </div>
+        </div> 
+        <section class="section section-light">
+        <h2>Our Basic Ground Coffees</h2>
+            <p>Basic Ground Coffee Flavors:<br/>100% Colombian, House Blend, Breakfast Blend, Coffeehouse Blend, Supreme Blend, Simply Smooth, French Roast, Java Roast, Special Roast
+                <br/>Many of the flavors are also available in Decaffinated.</p>
+        </section>
+    
+     <div class="pimg2" img src="../OBCoffee/images/pimg2.jpg">
+        <div class="ptext">
+            
+       </div>
+        </div> 
+        <section class="section section-dark">
+        <h2>Our Flavored Ground Coffees</h2>
+            <p>Flavored Ground Coffees:<br/>Caramel, Harvest Blend, Vanilla Roast, Apricot Blend, Cappuccino, Caramel Cappuccino, Vanilla Caramel, Cinnamon, French Silk, Mocha Java 
+            <br/>Many of the flavors are also available in Decaffinated.</p>
+        </section>
+    
+     <div class="pimg3" img src="../OBCoffee/images/pimg3.jpg">
+        <div class="ptext">
+            
+       </div>
+        </div> 
+        <section class="section section-light">
+        <h2>Our Coffee Beans:<br/> </h2>
+            <p>Basic Coffee Flavors:<br/>100% Colombian, House Blend, Breakfast Blend, Coffeehouse Blend, Supreme Blend, Simply Smooth, French Roast, Java Roast, Special Roast
+                <br/>Many of the flavors are also available in Decaffinated.</p>
+        </section>
+    
+     <div class="pimg1" img src="../OBCoffee/images/pimg1.jpg">
+        <div class="ptext">
+            <span class="contact">
+       <p>Contact Us:</p>
+         <p>Email:<br/>www.omahasbestcoffee.com</p>       
+                  
+            <p>Phone Number:<br/>1-oma-hco-ffee</p>
+                  <p>Mailing Address:<br/> 123 Coffee Lane<br/>Omaha, Nebraska 68106</p>
+                <a href="../PHomepage/index.html">Go to Portfolio Home Page</a>
+           </span>     
+           </div> 
+        </div>
+        
+         </body>
+    </html>

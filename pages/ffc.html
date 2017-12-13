@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/ffc.css" type="text/css" rel="stylesheet"/>
+    <style>
+        #container{
+                background-color: darkolivegreen;
+                width: 100%;
+                height: 100%;
+                perspective: 1000px;
+            }
+            
+            .card{
+                display: inline-block;
+                transform-style: preserve-3d;
+                width: 31vw;
+                height: 40.25vh;
+                padding-left: 8px;
+                margin: 15px;
+                position: relative;
+                box-sizing: border-box;
+                color: white;
+                transition: transform 2s;
+                
+            }
+            
+            .flipOver{
+                transform: rotateY(-180deg);
+        
+            }
+            
+            .front{
+                position: absolute;
+                width: 30vw;
+                height: 40.25vh;
+                background-size: cover;
+            }
+            
+            .back{
+                position: absolute;
+                width: 30vw;
+                height: 40.25vh;
+                transform: translateZ(-1px) rotateY(180deg);
+                background-size: cover;
+            }
+            
+            #fallfront1{
+                background-image: url("../FFCards/images/fallfront1.jpg");
+            }
+            
+            #fallback1{
+                background-image: url("../FFCards/images/fallback1.jpg");
+            }
+             #fallfront2{
+                background-image: url("../FFCards/images/fallfront2.jpg");
+            }
+            
+            #fallback2{
+                background-image: url("../FFCards/images/fallback2.jpg");
+            }
+             #fallfront3{
+                background-image: url("../FFCards/images/fallfront3.jpg");
+            }
+            
+            #fallback3{
+                background-image: url("../FFCards/images/fallback3.jpg");
+            }
+            #fallfront4{
+                background-image: url("../FFCards/images/fallfront4.jpg");
+            }
+           
+            #fallback4{
+                background-image: url("../FFCards/images/fallback4.jpg");
+            }
+              #fallfront5{
+                background-image: url("../FFCards/images/fallfront5.jpg");
+            }
+            
+            #fallback5{
+                background-image: url("../FFCards/images/fallback5.jpg");
+            }
+            #fallfront6{
+                background-image: url("../FFCards/images/fallfront6.jpg");
+            }
+           
+            #fallback6{
+                background-image: url("../FFCards/images/fallback6.jpg");
+            }
+            h1{
+                color: orangered;
+                text-align: center;
+                font-size: 48px;
+              }
+            a{
+               text-decoration: none;
+               background-color: darkolivegreen;
+               font-size: 23.2px;
+               color: orangered;
+               border-style: ridge;
+               border-width: 6px;
+               border-color: orangered;
+               padding-left: 2px;
+               padding-right: 2px;
+               position: absolute;
+               bottom: 0;
+               left: 0; 
+            } 
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="card">
+                <div class="front" id="fallfront1" img src="../FFCards/images/fallfront1.jpg"></div>
+                <div class="back" id="fallback1" img src="../FFCards/images/fallback1.jpg">
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="front" id="fallfront2" img src="../FFCards/images/fallfront2.jpg"></div>
+                <div class="back" id="fallback2" img src="../FFCards/images/fallback2.jpg">
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="front" id="fallfront3" img src="../FFCards/images/fallfront3.jpg"></div>
+                <div class="back" id="fallback3" img src="../FFCards/images/fallback3.jpg">
+                </div>
+            </div>
+            
+            <h1>Flip the Fall Cards</h1>
+            
+            <div class="card">
+                <div class="front" id="fallfront4" img src="../FFCards/images/fallfront4.jpg"></div>
+                <div class="back" id="fallback4" img src="../FFCards/images/fallback4.jpg">
+                </div>
+            </div>
+               
+        <div class="card">
+                <div class="front" id="fallfront5" img src="../FFCards/images/fallfront5.jpg"></div>
+                <div class="back" id="fallback5" img src="../FFCards/images/fallfront5.jpg">
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="front" id="fallfront6" img src="../FFCards/images/fallfront6.jpg"></div>
+                <div class="back" id="fallback6" img src="../FFCards/images/fallback6.jpg">
+                </div>
+            </div>
+        <a href="../PHomepage/index.html">Go to Portfolio Home Page</a>
+
+        <script
+          src="https://code.jquery.com/jquery-2.2.4.js"
+          integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+          crossorigin="anonymous"></script>
+        <script src="js/ffc.js"></script>
+        <script>  
+        $(".card").click(function(){
+                $(this).toggleClass("flipOver");
+            });
+        </script>  
+    </body>
+</html>

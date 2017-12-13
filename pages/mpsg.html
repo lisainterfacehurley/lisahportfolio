@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="css/mpsg.css" type="text/css" rel="stylesheet"/>
+    <style>
+     #container{
+                background-color: rgb(48, 51, 109);
+                width: 100%;
+                height: 100%;
+                perspective: 1000px;
+            }
+            
+            .card{
+                display: inline-block;
+                transform-style: preserve-3d;
+                width: 31vw;
+                height: 40.25vh;
+                padding-left: 8px;
+                margin: 15px;
+                position: relative;
+                box-sizing: border-box;
+                color: white;
+                transition: transform 2s;
+            }
+            
+            .flipOver{
+                transform: rotateY(-180deg);
+             }
+            
+            .front{
+                position: absolute;
+                width: 30vw;
+                height: 40.25vh;
+                background-size: cover;
+            }
+            
+            .back{
+                position: absolute;
+                width: 30vw;
+                height: 40.25vh;
+                transform: translateZ(-1px) rotateY(180deg);
+                background-size: cover;
+            }
+            
+            #pfront1{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+            
+            #pback1{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+             #pfront2{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+            
+            #pback2{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+             #pfront3{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+            
+            #pback3{
+                background-image: url("../PortSG/images/bluebg.jpg");
+            }
+            #pfront4{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+           
+            #pback4{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+              #pfront5{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+            
+            #pback5{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+            #pfront6{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+           
+            #pback6{
+                background-image: url("../PortSG/images/limebg.jpg");
+            }
+             #pfront7{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+           
+            #pback7{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+            #pfront8{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+           
+            #pback8{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+            #pfront9{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+           
+            #pback9{
+                background-image: url("../PortSG/images/labbg.jpg");
+            }
+            #pfront10{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+           
+            #pback10{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+            #pfront11{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+           
+            #pback11{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+            #pfront12{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+           
+            #pback12{
+                background-image: url("../PortSG/images/orangebg.jpg");
+            }
+            #pfront13{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+           
+            #pback13{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+            #pfront14{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+           
+            #pback14{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+            #pfront15{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+           
+            #pback15{
+                background-image: url("../PortSG/images/limebg2.jpg");
+            }
+            #pfront16{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+           
+            #pback16{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+            #pfront17{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+           
+            #pback17{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+            #pfront18{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+           
+            #pback18{
+                background-image: url("../PortSG/images/orangebg2.jpg");
+            }
+            h1{
+                color: rgb(141, 198, 63);
+                text-align: center;
+                font-size: 72px;
+              }
+            h2{
+                color: rgb(48, 51, 109);
+                text-align: center;
+                font-size: 72px;
+            }
+            p{
+             color: rgb(48, 51, 109);
+             font-size: 24px;
+             margin: 8px;    
+            }
+            li{
+             color: rgb(48, 51, 109);
+             font-size: 24px;
+             margin: 8px;    
+            } 
+         a{
+               text-decoration: none;
+               background-color: rgb(48, 51, 109);
+               font-size: 23.2px;
+               color: rgb(141, 198, 63);
+               border-style: ridge;
+               border-width: 6px;
+               border-color: rgb(141, 198, 63);
+               padding-left: 2px;
+               padding-right: 2px;
+               position: absolute;
+               bottom: 0;
+               left: 0; 
+            }
+        </style>    
+    </head>
+    <body>
+        <div id="container">
+            <div class="card">
+                <div class="front" id="pfront1" img src="../PortSG/images/bluebg.jpg">
+                <h2>My Portfolio</h2>
+                </div>
+                <div class="back" id="pback1" img src="../PortSG/images/bluebg.jpg">
+                    <p>My Portfolio:<br/>
+                <ul>
+	                <li>The carousel at the top shows my educational resources as I have learned to code</li>
+	                <li>The first projects are my resume, my education, and the content of my projects</li>
+	                <li>The next projects utilize many skills</li>
+	                <li>All of the other projects demonstrate skills I learned along the way</li> 
+                </ul></p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="front" id="pfront2" img src="../PortSG/images/bluebg.jpg">
+                <h2>My Resume</h2>
+                </div>
+                <div class="back" id="pback2" img src="../PortSG/images/bluebg.jpg">
+                    <p>My Resume:<br/>
+                <ul>
+	                <li>First time placing a resume on a web page</li>
+	                <li>I wanted this to look like a regular resume, just on a web page</li>
+	                <li>I wanted to keep the style simple and easy to read</li>
+	             </ul></p>    
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="front" id="pfront3" img src="../PortSG/images/bluebg.jpg">
+                <h2>My Education</h2>
+                </div>
+                <div class="back" id="pback3" img src="../PortSG/images/bluebg.jpg">
+                   <p>My Education:<br/>
+                <ul>
+                   <li>First time writing about my web development and coding education</li>
+                   <li>First time putting my web development and coding education on a web page</li>
+                   <li>I chose to use a Parallax so I could include the images from all of my education experiences</li>
+                   <li>Side Note: I also have B.S. Degrees in Business Administration and Accounting from Bellevue University</li> 
+                    </ul></p>
+                </div>
+            </div>
+            
+            <h1>Flip the Project Cards</h1>
+            
+            <div class="card">
+                <div class="front" id="pfront4" img src="../PortSG/images/limebg.jpg">
+                <h2>Portfolio Pieces:<br/>Content and Goals</h2>    
+                </div>
+                <div class="back" id="pback4" img src="../PortSG/images/limebg.jpg">
+                         <p>My Portfolio Pieces:&nbsp Content and Goals<br/>
+                    <ul>
+                        <li>Purpose: Simple, Concise and Informative</li>
+                        <li>Central location to describe the content and goals of each portfolio piece in my coding journey</li>
+                        <li>Each tile will have a project name</li>
+                        <li>Click the tile and it will turn over</li>
+                        <li>You will find brief steps and goals for the project</li>
+                    </ul></p>    
+                </div>
+            </div>
+               
+        <div class="card">
+                <div class="front" id="pfront5" img src="../PortSG/images/limebg.jpg">
+                <h2>Corporate Project</h2>   
+            </div>
+                <div class="back" id="pback5" img src="../PortSG/images/limebg.jpg">
+                    <p>This project I created off of another project:<br/>
+                    <ul>
+                        <li>Combines HTML and CSS only</li> 
+                        <li>First time inserting icons</li>
+                        <li>First time staggering images and buttons</li>
+                        <li>First time using Sketchbook</li>
+                        <li>First time putting in multiple social links</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="front" id="pfront6" img src="../PortSG/images/limebg.jpg">
+                <h2>Fall Flower Preparation Project</h2>
+                </div>
+                <div class="back" id="pback6" img src="../PortSG/images/limebg.jpg">
+                    <p>This project involved a lot of first time experiences:<br/>
+                    <ul>
+                        <li>Creating 14 pages that would link from the home page to the correct page and then link back to the Home Page through buttons</li>
+                        <li>All 15 pages can be viewed above the fold and fills the screen</li>
+                        <li>All 14 of the pages that link the Home Page are similar</li>
+                        <li>All pages have ridge borders around the images that gives a 3D frame appearance</li>
+                        <li>Most of the images are mine, all of the text is my own</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <h1>Flip the Project Cards</h1>
+
+        <div class="card">
+                <div class="front" id="pfront7" img src="../PortSG/images/labbg.jpg">
+                <h2>Breakout Game Project</h2>
+                </div>
+                <div class="back" id="pback7" img src="../PortSG/images/labbg.jpg">
+                    <p>Breakout Game Project:<br/>
+                    <ul>
+                        <li>I wanted to see if I could follow along, create the game and make it work</li>
+                        <li>First time creating a game</li>
+                        <li>First time creating and using a canvas, pebble and ball</li>
+                        <li>First time creating a project that had scores and lives</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <div class="card">
+                <div class="front" id="pfront8" img src="../PortSG/images/labbg.jpg">
+                <h2>Sixteen Mobile Project</h2>
+                </div>
+                <div class="back" id="pback8" img src="../PortSG/images/labbg.jpg">
+                    <p>Sixteen Mobile Project:<br/>
+                    <ul>
+                        <li>This was one of the first class projects</li>
+                        <li>We were given the images, layout and colors to use</li>
+                        <li>We were shown what it was to look like</li>
+                        <li>We had to figure out how to put it together</li>
+                        <li>I could get the images on the page, just not where they were to be</li>
+                        <li>Positioning correctly took some additional work</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <div class="card">
+                <div class="front" id="pfront9" img src="../PortSG/images/labbg.jpg">
+                <h2>Sixteen Desktop Project</h2>
+                </div>
+                <div class="back" id="pback9" img src="../PortSG/images/labbg.jpg">
+                    <p>Sixteen Desktop Project:<br/>
+                    <ul>
+                        <li>This was another class project, we had already created a mobile version</li>
+                        <li>First project involving media queries</li>
+                        <li>The Nav Button was replaced with a Navigational Header</li>
+                        <li>First time creating a Navigational Header</li>
+                        <li>Images had to be changed out in this version</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <h1>Flip the Project Cards</h1>
+
+        <div class="card">
+                <div class="front" id="pfront10" img src="../PortSG/images/orangebg.jpg">
+                <h2>Sixteen Basic Bootstrap Project</h2>
+                </div>
+                <div class="back" id="pback10" img src="../PortSG/images/orangebg.jpg">
+                    <p>Sixteen Basic Bootstrap Project:<br/>
+                    <ul>
+                        <li>This was another class project, we had already created a mobile and a desktop version</li>
+                        <li>This time we were to use Bootstrap to create the project</li>
+                        <li>We needed to add a Contact Form (First Time) </li>
+                        <li>We needed to use a Jumbotron (First Time) </li>
+                        <li>The input type needed to contain placeholders (First Time) </li>  
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <div class="card">
+                <div class="front" id="pfront11" img src="../PortSG/images/orangebg.jpg">
+                <h2>Sixteen Embellished Bootstrap Project</h2>
+                </div>
+                <div class="back" id="pback11" img src="../PortSG/images/orangebg.jpg">
+                    <p>Sixteen Embellished Bootstrap Project:<br/>
+                    <ul>
+                        <li>I then took the Sixteen Basic Bootstrap Project and I stylized it</li>
+                        <li>I changed the black header to a green header with white lettering</li>
+                        <li>I added shades of green instead of the generic light gray</li>
+                        <li>I put a green border around the headers: Our Products and Contact Us; to make them stand out</li>
+                        <li>I added the Sixteen logo to the bottom of the project</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <div class="card">
+                <div class="front" id="pfront12" img src="../PortSG/images/orangebg.jpg">
+                <h2>Omaha's Best Coffee Parallax Project</h2>
+                </div>
+                <div class="back" id="pback12" img src="../PortSG/images/orangebg.jpg">
+                    <p>Omaha's Best Coffee Parallax Project:<br/>
+                    <ul>
+                        <li>This was my first parallax project</li>
+                        <li>I created this project on my own before we covered Parallax in class</li>
+                        <li>I wanted to see if I could do it on my own</li>
+                        <li>I used three related images</li>
+                        <li>I added headers and text</li>
+                        <li>I put contact info at the end</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <h1>Flip the Project Cards</h1>
+
+        <div class="card">
+                <div class="front" id="pfront13" img src="../PortSG/images/limebg2.jpg"> 
+                <h2>Fall Flipping Cards Project</h2>
+                </div>
+                <div class="back" id="pback13" img src="../PortSG/images/limebg2.jpg"> 
+                    <p>Fall Flipping Cards Project:<br/>
+                    <ul>
+                        <li>We did a similar project in class, I wanted to take it further</li>
+                        <li>I wanted the cards to be on a background color so they would stand out</li>
+                        <li>I wanted 6 evenly sized cards that fit 3 cards across and in 2 rows</li>
+                        <li>I wanted them to fit above the fold with a header between the 2 rows</li>
+                        <li>I wanted 2 different fall pictures on each card</li>
+                        <li>I wanted the cards to flip</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <div class="card">
+                <div class="front" id="pfront14" img src="../PortSG/images/limebg2.jpg"> 
+                <h2>Interface Photo Cube Project</h2>
+                </div>
+                <div class="back" id="pback14" img src="../PortSG/images/limebg2.jpg"> 
+                    <p>Interface Photo Cube Project:<br/>
+                    <ul>
+                        <li>I used the Interface Web School colors on my Home page…</li>
+                        <li>I used the Interface Web School colors and images on this page</li>
+                        <li>I put a background color on the page so the cube stands out</li>
+                        <li>I created 2 buttons, to click on, to make the cube turn and flip</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+<div class="card">
+                <div class="front" id="pfront15" img src="../PortSG/images/limebg2.jpg"> 
+                <h2>Sixteen Project + jQuery</h2>
+                </div>
+                <div class="back" id="pback15" img src="../PortSG/images/limebg2.jpg"> 
+                    <p>Sixteen Project + jQuery:<br/>
+                    <ul>
+                        <li>This was another class project</li>
+                        <li>First class project involving jQuery</li>
+                        <li>The Nav Button is functional, click on it and menu comes up</li>
+                        <li>Hover over menu item, background turns white</li>
+                        <li>Click on link, it takes you back to the Home Page</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <h1>Flip the Project Cards</h1>
+      
+        <div class="card">
+                <div class="front" id="pfront16" img src="../PortSG/images/orangebg2.jpg">
+                <h2>Coming Up Cosmos 1st jQuery Project</h2>
+                </div>
+                <div class="back" id="pback16" img src="../PortSG/images/orangebg2.jpg">
+                    <p>Everything is Coming Up Cosmos 1st jQuery Project:<br/>
+                    <ul>
+                        <li>This is the first project, I created on my own using basic jQuery</li>
+                        <li>First I put in a background color, a header, and some text</li>
+                        <li>I  put in a box with a big image</li>
+                        <li>I created 12 thumbnail images</li>
+                        <li>You can click on a thumbnail and that image will appear in the big image box</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front" id="pfront17" img src="../PortSG/images/orangebg2.jpg">
+                <h2>Basic New Coffee is Coming Soon! Project</h2>
+                </div>
+                <div class="back" id="pback17" img src="../PortSG/images/orangebg2.jpg">
+                    <p>Basic New Coffee is Coming Soon! Project:<br/>
+                    <ul>
+                        <li>This is meant to be a simple website</li>
+                        <li>There is a background image</li>
+                        <li>A display 1 header</li>
+                        <li>There are 2 thumbnail images</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+
+        <div class="card">
+                <div class="front" id="pfront18" img src="../PortSG/images/orangebg2.jpg">
+                <h2>New Coffee is Coming Soon! (with Navbar) Project</h2>
+                </div>
+                <div class="back" id="pback18" img src="../PortSG/images/orangebg2.jpg">
+                    <p>New Coffee is Coming Soon! (with Navbar) Project:<br/>
+                    <ul>
+                        <li>I took the basic New Coffee is Coming Soon Project and embellished it</li>
+                        <li>I added a Navbar at the top</li>
+                        <li>I put a border around the thumbnail images</li>
+                    </ul>    
+                    </p>
+                </div>
+            </div>
+        <a href="../PHomepage/index.html">Go to Portfolio Home Page</a>
+
+        <script
+          src="https://code.jquery.com/jquery-2.2.4.js"
+          integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+          crossorigin="anonymous"></script>
+        <script src="js/mpsg.js"></script>
+        <script>$(".card").click(function(){
+                $(this).toggleClass("flipOver");
+            });</script>
+    </body>
+</html>

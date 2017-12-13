@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MinCorporate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    
+    <!-- css styles -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="css/MinCorporate.css" type="text/css" rel="stylesheet"/>
+    
+ <style>
+ header{
+	color: #fff;
+	height: 112px;
+	line-height: 112px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+header a.logo{
+	float: left;
+    height: 100px;
+    width: 250px;
+}
+
+header nav{
+	float: right;
+	font-weight: bold;
+
+}
+
+header nav ul li{
+	padding-left: 30px;
+}
+
+header nav ul li a{
+	color: #fff;
+	
+}
+
+header nav ul li a:hover, header nav ul li a:focus{
+	color: #e74c3c;
+	text-decoration: none;
+} 
+
+*,body,html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #e74c3c;
+    background-color: #2d82d8;
+    margin: 0 auto;
+    padding: 0;   
+}
+
+h1{
+	font-size: 36px;
+	color: #e74c3c;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 30px;
+	color: #e74c3c;
+	font-weight: bold;
+}
+
+h3{
+	font-size: 24px;
+	color: #e74c3c;
+	font-weight: bold;
+}
+
+.primary{
+	color: #e74c3c;
+}
+
+.primary-bg{
+	background-color: #e74c3c;
+}
+
+.secondary-dark-blue{
+	color: #34495e;
+}
+
+.secondary-dark-blue-bg{
+	background-color: #34495e;
+}
+
+.secondary-sky-blue{
+	color: #2d82d8;
+}
+
+.secondary-sky-blue-bg{
+	background-color: #2d82d8;
+}
+
+a:focus{
+	outline: 0;
+}
+        
+ul{
+	list-style: none;
+}        
+        
+ul li{
+	display: inline-block;
+}        
+ a:hover
+{
+	text-decoration: none;
+}
+
+ol,ul
+{
+	margin-bottom: 0px;
+}
+
+.section-padding{
+	padding: 56px 0;
+}
+
+.white{
+	color: #fff;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.center{
+	text-align: center;
+}
+
+.a 
+  /***** big images *****/
+        
+.slider,.slider ul.slider-carousel, .slider ul.slider-carousel li{
+	height: 600px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.slider ul.slider-carousel li h1{
+	margin-top: 150px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+.slider ul.slider-carousel li p{
+	margin-bottom: 50px;
+}
+
+.slider ul.slider-carousel li a{
+	padding: 10px 50px;
+	margin-right: 30px;
+	color: #fff;
+	font-weight: bold;
+	transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-o-transition:all 0.3s ease-in;
+}
+
+.slider ul.slider-carousel li a:last-child{
+	margin-right: 0px;
+}
+
+.bigimages h1{
+	margin-top: 150px;
+	margin-bottom: 30px;
+	color: white;
+}
+
+ .bigimages{
+	margin-bottom: 50px;
+	padding: 10px 50px;
+	margin-right: 30px;
+	color: white;
+	font-weight: bold;
+	height: 600px;
+	width: 100%;
+ }
+ 
+ .bigimage1{
+	background:url("../MinCorporate/img/bigimages/bigimage1.png");
+	background-size: 100% 100%;
+    background-color: #34495e;
+    height: 600px;
+	width: 100%; 
+}
+
+.bigimage2{
+	background:url("../MinCorporate/img/bigimages/bigimage2.png");
+	background-size: 100% 100%;
+    background-color: #34495e;
+    height: 600px;
+	width: 100%; 
+}
+     
+.bigimage3{
+	background:url("../MinCorporate/img/bigimages/bigimage3.png");
+	background-size: 100% 100%;
+    background-color: #34495e;
+    height: 600px;
+	width: 100%; 
+}
+
+/**** services section ****/
+
+.services{
+	text-align: center;
+ }
+       
+.services .services-content i{
+	font-size: 32px;
+ }
+
+.services-header{
+	margin-bottom: 42px;
+	text-align: center;
+}
+     
+#project1{
+     background-color: white;
+     float: left;
+     height: 200px;
+     width: 49.9%;
+}
+     
+#project2{
+     background-color: white;
+     float: right;
+     height: 200px;
+     width: 49.9%;
+}
+     
+#project3{
+    background-color: white;
+    float: left;
+    height: 200px;
+    width: 49.9%;
+}
+#project4{
+    background-color: white;
+    float: right;
+    height: 200px;
+    width: 49.9%;
+} 
+     
+  .portfolio .inner-content{
+	position: relative;
+	width: 265px;
+	height: 225px;
+}
+
+.portfolio .inner-content img{
+	width: 100%;
+	height: 100%
+}
+
+.portfolio .inner-content .overlay-content{
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	text-align: center;
+	background: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+
+.portfolio-carousel li{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.portfolio .inner-content .overlay-content h3,.portfolio .inner-content .overlay-content p{
+	color: white;
+}
+
+.portfolio .inner-content .overlay-content h3{
+	padding-top: 20%;
+	color: #e74c3c;
+}
+
+.portfolio .inner-content:hover .overlay-content{
+	top: 0px;
+}
+
+.portfolio .inner-content .overlay-content p a{
+	color: #2d82d8;
+	font-weight: bold;
+}
+
+.portfolio .portfolio-nav{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.portfolio .portfolio-nav li{
+	cursor: pointer;
+	margin-right: 10px;
+	font-size: 14px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.portfolio .portfolio-nav li:last-child{
+	margin-right: 0px;
+}
+
+.portfolio .portfolio-nav li:hover{
+	background-color: #e74c3c;
+}
+      
+/* footer */
+
+footer{
+	padding-top: 56px;
+}
+
+footer h1{
+	padding-bottom: 28px;
+}
+
+footer p i{
+	color: #2d82d8;
+}
+
+footer p span{
+	padding-left: 15px;
+	font-weight: bold;
+}
+
+footer p.about{
+	margin-bottom: 20px;
+}
+     
+.footer-social-links li{
+	padding: 0 10px;
+	font-size: 28px;
+}
+
+.footer-social-links li a i.fa-facebook{
+	color: #3b5998;
+}
+
+.footer-social-links li a i.fa-twitter{
+	color: #00aced;
+}
+
+.footer-social-links li a i.fa-youtube{
+	color:  #bb0000;
+}
+
+.footer-social-links li a i.fa-linkedin{
+	color: #007bb5;
+}
+
+.footer-social-links li a i.fa-dribbble{
+	color: #ea4c89;
+}
+
+a{
+  text-decoration: none;
+  background-color: #e74c3c;
+  font-size: 23.2px;
+  color: white;
+  border-style: ridge;
+  border-width: 6px;
+  border-color: white;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 2px;
+  padding-right: 2px;
+  bottom: 0;
+  left: 0; 
+}
+    </style>
+ </head>
+ <body>
+ <!-- body content -->
+      
+   <header class="secondary-dark-blue-bg">
+        <div class="container">
+            <div class="row">
+               <a class="logo" href="#"><img src="../MinCorporate/img/logo.png" alt="logo"/></a>
+                
+                    <nav class="menu" id="menu">
+                        <ul>
+                        <li class="active"><a href="#slider">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Our Works</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+         
+       
+       <section class="slider" id="slider">
+      <ul class="slider-carousel" id="slider-carousel">
+        <li class="bigimage1" >
+            <h1>Welcome to <span class="primary">Corporate</span></h1>
+        <h3><span class="secondary-sky-blue">It is a long established fact that a reader will be distracted by the readable<br/>content of a page when looking at its layout.</span></h3>
+           <br/>
+            <br/>
+            <a href="#" class="primary-bg ctal">Get started</a><a href="#" class="secondary-sky-blue-bg cta2">Contact Us</a>
+            </li>
+          <br/>
+          <br/>
+          
+        <section class="services section-padding" id="services">
+          <div class="services-header">
+           <h1>Our Services</h1>
+           <h2>It is a long established fact that a reader will be distracted by the <br/> readable content of a page when looking at its layout.</h2>
+        </div>
+            <p><i class="fa fa-laptop"></i></p><h3>Web Design</h3>
+            <p><i class="fa fa-edit"></i></p><h3>Graphic Design</h3>
+            <p><i class="fa fa-cog"></i></p><h3>PSD to HTML/CSS</h3>
+            <p><i class="fa fa-bars"></i></p><h3>Wordpress</h3>
+            <p><i class="fa fa-leaf"></i></p><h3>Theme Development</h3>
+            <p><i class="fa fa-globe"></i></p><h3>Unlimited Support</h3>
+            <br/>
+            <br/>
+            
+          <li class="bigimage2">
+          <h1> We are <span class="primary">Developers</span></h1>
+          <h3><span class="secondary-sky-blue">It is a long established fact that a reader will be distracted by the readable<br/>content of a page when looking at its layout.</span></h3>
+            <br/>
+            <br/>
+          <a href="#" class="primary-bg ctal">See Our Works</a><a href="#" class="secondary-sky-blue-bg cta2">Our Members</a>
+          </li>
+          <br/>
+          <br/> 
+            
+           <div class="portfolio-header">
+           <h1 class="White">Our Works</h1>
+           <p>It is a long established fact that a reader will be distracted by the <br/> readable content of a page when looking at its layout.</p>
+           </div>
+            <br/>
+            <br/>
+        <div class="container">
+                
+        <img src="../MinCorporate/img/portfolio/project1.png" id="project1">
+        <h3>Environment Website</h3>
+            <br/>
+            <p><a href="#">Details here</a></p>
+            <br/>
+            <br/> 
+        <img src="../MinCorporate/img/portfolio/project2.png" id="project2">
+        <h3>Ecommerce Website</h3>
+             <br/>
+             <p><a href="#">Details Here</a></p>
+             <br/>
+             <br/>          
+        <img src="../MinCorporate/img/portfolio/project3.png" id="project3">
+        <h3>Portfolio Website</h3>
+             <br/>
+             <p><a href="#">Details Here</a></p>
+             <br/>
+             <br/>         
+        <img src="../MinCorporate/img/portfolio/project4.png" id="project4">
+        <h3>Blog Website</h3>
+            <br/>
+            <p><a href="#">Details Here</a></p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            
+       <li class="bigimage3">
+       <h1>We Make <span class="primary">Awesome Themes</span></h1>
+       <h3><span class="secondary-sky-blue">It is a long established fact that a reader will be distracted by the readable<br/>content of a page when looking at its layout.</span></h3>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+       <a href="#" class="primary-bg ctal">Check Our Themes</a><a href="#" class="secondary-sky-blue-bg cta2">Contact Us</a>
+       </li>
+       <br/>
+       <br/>
+                       
+        <section>
+            <h1>Stay in Touch</h1>
+            <br/>
+            <br/>
+            <div class="footer-social-links">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>    
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </section>
+        
+        <br/>
+        <br/>
+               
+        <section> 
+        <footer>        
+        <div class="copyright">
+        <p>Copyright &copy;<span class="primary"></span> Corporate 2017. &nbsp;All Rights Reserved.</p>
+        </div>
+        </footer>       
+        </section>
+        <br/>
+        <br/>
+                    
+        <div class="ptext"><a href="../PHomepage/index.html">Go to Portfolio Home Page</a>
+         
+ </body>
+ </html>
+ 

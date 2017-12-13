@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="css/ecu.css" type="text/css" rel="stylesheet"/> 
+    <style>
+    #bigImage{
+                width: 1578px;
+                height: 600px;
+                transform: translate(10%, 0%);
+            }
+             
+          body{
+                background-color: green;
+            }
+           h1{
+               color: limegreen;
+               text-align: center;
+               font-size: 48px;
+           }
+          h2{
+               color: limegreen;
+               text-align: center; 
+               font-size: 32px;
+           }
+            .thumbnail{
+                width: 310px;
+                height: 250px;
+                cursor: pointer;
+            }
+            
+            .thumbnail:hover{
+                opacity: 0.5;
+            }
+         a{
+               text-decoration: none;
+               background-color: darkgreen;
+               font-size: 23.2px;
+               color: limegreen;
+               border-style: ridge;
+               border-width: 6px;
+               border-color: limegreen;
+               padding-left: 2px;
+               padding-right: 2px;
+               position: absolute;
+               top: 0;
+               right: 0; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="body">
+            <h1>Everything is Coming Up Cosmos!</h1>
+        
+      <h2> Cosmos are annuals. Cosmos are among the easiest of flowers to save the seeds from. After a bloom is spent, the petals fall off, the center dries up and seeds fan out. 	Harvest the seeds. Store the seeds inside of an envelope. Keep the seeds in a cool, dry location such as a basement or an attached garage.  This method of harvesting seeds can apply to any variety of Cosmos.
+  </h2>           
+</div>
+       
+        <br/>
+        
+        <img id="bigImage" src="../Cosmos/images/image1.jpg"/>
+        <br/>
+       
+                
+        
+        <img class="thumbnail" src="../Cosmos/images/image2.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image3.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image4.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image5.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image6.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image7.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image8.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image9.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image10.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image11.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image12.jpg"/>
+        <img class="thumbnail" src="../Cosmos/images/image1.jpg"/>
+        <br/>
+        <a href="../PHomepage/index.html">Go to Portfolio Home Page</a>
+
+
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+        <script src="js/ecu.js"></script>
+        <script>
+        $("body").on("click", ".thumbnail", function(event){
+                var newImage = $(this).attr("src");
+                $("#bigImage").attr("src", newImage);
+            });
+            
+        </script>
+    </body>
+</html>
