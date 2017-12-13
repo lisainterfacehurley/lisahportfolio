@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <!-- page loading -->
+    <script type="text/javascript" src="js/pace.js"></script>
+    <!-- css styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slicknav.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/animation-without-delay.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/respond.js"></script>
+    <script type="text/javascript" src="js/caroufredsel.js"></script>
+    <style>
+    header{
+	color: #fff;
+	height: 112px;
+	line-height: 112px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+header a.logo
+{
+	float: left;
+}
+
+header nav
+{
+	float: right;
+	font-weight: bold;
+
+}
+
+header nav ul li
+{
+	padding-left: 30px;
+}
+
+header nav ul li a
+{
+	color: #fff;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+
+}
+
+header nav ul li a:hover, header nav ul li a:focus
+{
+	color: #e74c3c;
+	text-decoration: none;
+}
+
+/***** slider section *****/
+
+.slider,.slider ul.slider-carousel, .slider ul.slider-carousel li{
+	height: 600px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.slider ul.slider-carousel li h1
+{
+	margin-top: 150px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+.slider ul.slider-carousel li p
+{
+	margin-bottom: 50px;
+}
+
+.slider ul.slider-carousel li a
+{
+	padding: 10px 50px;
+	margin-right: 30px;
+	color: #fff;
+	font-weight: bold;
+	transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-o-transition:all 0.3s ease-in;
+}
+
+.slider ul.slider-carousel li a:last-child
+{
+	margin-right: 0px;
+}
+
+.img1
+{
+	background:url(img/slider/slider1.png);
+	background-size: 100% 100%;
+}
+
+.img2
+{
+	background:url(img/slider/slider2.png);
+	background-size: 100% 100%;
+}
+
+.img3
+{
+	background:url(img/slider/slider3.png);
+	background-size: 100% 100%;
+}
+
+.slider ul.slider-carousel li a.cta1:hover
+{
+	background-color: #ff695a;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.slider ul.slider-carousel li a.cta2:hover
+{
+	background-color: #3f9cfa;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.slider ul.sliderpager li
+{
+	padding: 0 3px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.slider ul.sliderpager li a
+{
+	color: #34495e;
+}
+
+.slider ul.sliderpager li.selected a{
+	color: #e74c3c;
+}
+
+/**** services section ****/
+
+.services
+{
+	text-align: center;
+}
+
+.services .services-content i
+{
+	font-size: 32px;
+	color: #555;
+}
+
+.services-header,.portfolio-header,.team-header,.testimonials-header,.blog-header,.contact-header{
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+.portfolio{
+	
+	color: #fff;
+	background:url('img/portfolio/portfolio-bg.png');
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.portfolio .inner-content
+{
+	position: relative;
+	width: 265px;
+	height: 225px;
+
+}
+
+.portfolio .inner-content img
+{
+	width: 100%;
+	height: 100%
+}
+
+.portfolio .inner-content .overlay-content
+{
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	text-align: center;
+	background: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	
+}
+
+.portfolio-carousel li
+{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.portfolio .inner-content .overlay-content h3,.portfolio .inner-content .overlay-content p
+{
+	color: white;
+}
+
+.portfolio .inner-content .overlay-content h3
+{
+	padding-top: 20%;
+	color: #e74c3c;
+}
+
+.portfolio .inner-content:hover .overlay-content
+{
+	top: 0px;
+}
+
+.portfolio .inner-content .overlay-content p a
+{
+	color: #2d82d8;
+	font-weight: bold;
+}
+
+.portfolio .portfolio-nav
+{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.portfolio .portfolio-nav li
+{
+	cursor: pointer;
+	margin-right: 10px;
+	font-size: 14px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.portfolio .portfolio-nav li:last-child
+{
+	margin-right: 0px;
+}
+
+.portfolio .portfolio-nav li:hover
+{
+	background-color: #e74c3c;
+}
+
+/**** team section ****/
+
+.team .inner-content
+{
+	position: relative;
+	width: 265px;
+	height: 225px;
+
+}
+
+.team .inner-content img
+{
+	width: 100%;
+	height: 100%
+}
+
+.team .inner-content .overlay-content
+{
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	text-align: center;
+	background: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	
+}
+
+.team-carousel li
+{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+.team .inner-content:hover .overlay-content
+{
+	top: 0px;
+}
+
+
+.team .team-nav
+{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.team .team-nav li
+{
+	cursor: pointer;
+	margin-right: 10px;
+	font-size: 14px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.team .team-nav li:last-child
+{
+	margin-right: 0px;
+}
+
+.team .team-nav li:hover
+{
+	background-color: #e74c3c;
+}
+
+.team-carousel .inner-content p.name{
+	padding-top: 15%;
+}
+
+.team-carousel .inner-content p.description{
+	padding:0 15px;
+}
+
+ul.member-social-links li
+{
+	font-size: 14px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	}
+
+ul.member-social-links li a
+{
+	color: #fff;
+}
+
+ul.member-social-links li i
+{
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+ul.member-social-links li i.fa-facebook
+{
+	background-color: #3b5998;
+}
+
+ul.member-social-links li i.fa-twitter
+{
+	background-color: #00aced;
+}
+
+ul.member-social-links li i.fa-linkedin
+{
+	background-color: #007bb6;
+}
+
+.testimonials
+{
+	background:url('img/testi-bg.png');
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	color: #fff;
+}
+
+.testimonial-carousel li
+{
+	text-align: center;
+	margin: 0 200px;
+}
+
+blockquote
+{
+	border:none;
+	line-height: 1.5em;
+	position: relative;
+	font-size: 14px;
+	color: #fff;
+	display: inline-block;
+	padding:0;
+}
+
+blockquote:before
+{
+	position: absolute;
+	content: "\f10d";
+	top:-5px;
+	left: -20px;
+	font-family: FontAwesome;
+}
+
+blockquote:after
+{
+	position: absolute;
+	content: "\f10e";
+	bottom:-5px;
+	right: -20px;
+	font-family: FontAwesome;
+}
+
+.testimonial-carousel li img
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin-bottom: 30px;
+}
+
+.testimonial-carousel li p.name
+{
+	color: #e74c3c;
+	font-weight: bold;
+}
+
+.testimonial-carousel li p.position{
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.testipager li{
+	margin-right: 5px;
+}
+
+.testipager li:last-child{
+	margin-right: 0px;
+}
+
+.testipager li a{
+	color: #fff;
+}
+
+.testipager li.selected a{
+	color: #e74c3c;
+}
+
+/*** blog ***/
+
+.blog b.date
+{
+	color: #333;
+}
+
+.blog h3 a
+{
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+
+.blog h3 a:hover
+{
+	color:#e74c3c;
+}
+
+/*** contact section ***/
+
+.contact
+{
+	background: url('img/team/contact-bg.png');
+	background-attachment:  fixed;
+	background-size: 100% 100%;
+	color: #fff;
+}
+
+form.contact-form
+{
+	width: auto;
+	text-align: center;
+}
+
+input:not([type=submit]),textarea
+{
+	width: 100%;
+	margin-bottom: 40px;
+	color: #777;
+	padding-left: 20px;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.2) inset;
+	border: none;
+   
+}
+
+input:not([type=submit])
+{
+	height: 40px;
+	line-height: 40px;
+}
+
+textarea
+{
+	padding-top: 10px;
+   
+}
+#submit
+{
+	padding: 10px 30px;
+	color:#fff;
+	background-color: #e74c3c;
+	border:none;
+	font-weight: bold;
+}
+
+/* footer */
+
+footer
+{
+	padding-top: 56px;
+}
+
+footer h1
+{
+	padding-bottom: 28px;
+}
+
+footer p i
+{
+	color: #2d82d8;
+}
+
+footer p span
+{
+	padding-left: 15px;
+	font-weight: bold;
+}
+
+footer p.about
+{
+	margin-bottom: 20px;
+}
+
+form.update-form input:not([type=submit]),textarea
+{
+	width: 100%;
+	margin-bottom: 40px;
+	color: #777;
+	padding-left: 20px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2) inset;
+	border: none;
+}
+
+#take-email
+{
+	margin-bottom: 20px;
+}
+
+#submit-button
+{
+	background-color: #e74c3c;
+	color: #fff;
+	border: none;
+	padding: 0px 30px;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.footer-social-links li
+{
+	padding: 0 10px;
+	font-size: 28px;
+}
+
+.footer-social-links li a i.fa-facebook
+{
+	color: #3b5998;
+}
+
+.footer-social-links li a i.fa-twitter
+{
+	color: #00aced;
+}
+
+.footer-social-links li a i.fa-youtube
+{
+	color:  #bb0000;
+}
+
+.footer-social-links li a i.fa-linkedin
+{
+	color: #007bb5;
+}
+
+.footer-social-links li a i.fa-dribbble
+{
+	color: #ea4c89;
+}
+
+.copyright
+{
+	text-align: center;
+	color: #fff;
+	background-color: #333;
+	height: 42px;
+	line-height: 42px;
+	margin-top: 56px;
+}
+
+footer p span.primary
+{
+	padding-left: 0px;
+}
+
+.copyright p
+{
+	margin: 0 0 0 0;
+}
+
+    </style>
+</head>
+<body id="main">
+<! -- body content -- >
+    <div class="entire-content">
+    <header>
+        <div class="container">
+            <div class="row">
+                <a class="animation" href="#" data-animation="fadeInLeft"><img src="img/logo.png" alt="logo"/></a>
+                <nav class="animation" data-animation="fadeInRight">
+                    <ul class="menu" id="menu">
+                        <li class="active"><a href="#slider">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Our Works</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+    
+     <section class="slider" id="slider">
+      <ul class="slider-carousel" id="slider-carousel">
+        <li class="img1">
+            <h1>Welcome to <span class="primary">Corporate</span></h1>
+        
+        <h3><span class="secondary-sky-blue">It is a long established fact that a reader will be distracted by the readable<br/>content of a page when looking at its layout.</span></h3>
+            <a href="#" class="primary-bg ctal">Get started</a><a href="#" class="secondary-sky-blue-bg cta2">Contact Us</a>
+       </li>
+       <li class="img2">
+            <h1> We are Developers<span class="primary"></span></h1>
+          
+        <h3><span class="secondary-sky-blue">It is a long established fact that a reader will be distracted by the readable<br/>content of a page when looking at its layout.</span></h3>
+          <a href="#" class="primary-bg ctal">See Our Works</a><a href="#" class="secondary-sky-blue-bg cta2">Our Members</a>
+       </li>
+       <li class="img3">
+            <h1>We Make <span class="primary">Awesome Themes</span></h1>
+          
+       <h3><span class="secondary-sky-blue">It is a long established fact that a reader will be distracted by the readable<br/>content of a page when looking at its layout.</span></h3>
+         <a href="#" class="primary-bg ctal">Check Our Themes</a><a href="#" class="secondary-sky-blue-bg cta2">Contact Us</a>
+       </li>
+       </ul>
+         <ul class="sliderpager">
+         <li><a href="#"><i class="fa fa-circle"></i></a></li>
+             <li><a href="#"><i class="fa fa-circle"></i></a></li>
+             <li><a href="#"><i class="fa fa-circle"></i></a></li>
+         </ul>
+      </section>
+      <section class="services section-padding" id="services">
+          <div class="services-header">
+           <h1>Our Services</h1>
+            <p>It is a long established fact that a reader will be distracted by the <br/> readable content of a page when looking at its layout.</p>
+        </div>
+    <div class="services-content">
+        <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="animation" data-animation="fadeInLeft">
+            <p><i class="fa fa-laptop"></i></p>
+                <h3>Web Design</h3>
+                <p>The point of using lorem Ipsum is that it has more or less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+               </div> 
+            <div class="col-md-4">
+                <div class="animation" data-animation="fadeInLeft">
+            <p><i class="fa fa-edit"></i></p>
+                <h3>Graphic Design</h3>
+                <p>The point of using lorem Ipsum is that it has more or less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+               <div class="animation" data-animation="fadeInLeft"> 
+            <p><i class="fa fa-cog"></i></p>
+                <h3>PSD to HTML/CSS</h3>
+                <p>The point of using lorem Ipsum is that it has more or less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            </div>
+             <div class="col-md-4">
+                 <div class="animation" data-animation="fadeInLeft">
+            <p><i class="fa fa-bars"></i></p>
+                <h3>Wordpress</h3>
+                <p>The point of using lorem Ipsum is that it has more or less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+        </div>
+            <div class="col-md-4">
+               <div class="animation" data-animation="fadeInLeft"> 
+            <p><i class="fa fa-leaf"></i></p>
+                <h3>Theme Development</h3>
+                <p>The point of using lorem Ipsum is that it has more or less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+          </div>
+            <div class="col-md-4">
+                <div class="animation" data-animation="fadeInLeft">
+            <p><i class="fa fa-globe"></i></p>
+                <h3>Unlimited Support</h3>
+                <p>The point of using lorem Ipsum is that it has more or less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            </div>
+        </div>
+        </div>    
+          </section>
+     <section class="portfolio section-padding" data-stellar-background-ratio="0.5" id="portfolio">
+          <div class="animation" data-animation="fadeInLeft">
+          <div class="portfolio-header">
+           <h1 class="White">Our Works</h1>
+            <p>It is a long established fact that a reader will be distracted by the <br/> readable content of a page when looking at its layout.</p>
+        </div>
+    
+        <div class="container">
+        <div class="row">
+            <div class="animation" data-animation="fadeInUp">
+         <ul class="portfolio-carousel">   
+          <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project1.png">
+                   <div class="overlay-content">
+                       <h3>Environment Website</h3>
+                       <p><a href="#">Click here</a> for details</p>
+              </div>
+                   </div>
+             
+             </li>
+              <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project2.png">
+                   <div class="overlay-content">
+                       <h3>Ecommerce Website</h3>
+                       <p><a href="#">Click here</a> for details</p>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project3.png">
+                   <div class="overlay-content">
+                       <h3>Portfolio Website</h3>
+                       <p><a href="#">Click here</a> for details</p>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project4.png">
+                   <div class="overlay-content">
+                       <h3>Blog Website</h3>
+                       <p><a href="#">Click here</a> for details</p>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project1.png">
+                   <div class="overlay-content">
+                       <h3>Environment Website</h3>
+                       <p><a href="#">Click here</a> for details</p>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project2.png">
+                   <div class="overlay-content">
+                       <h3>Ecommerce Website</h3>
+                       <p><a href="#">Click here</a> for details</p>
+              </div>
+                   </div> 
+             </li>
+             <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project3.png">
+                   <div class="overlay-content">
+                       <h3>Portfolio Website</h3>
+                       <p><a href="#">Click here</a> for details</p>
+              </div>
+                   </div> 
+             </li>  
+              <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project4.png">
+                   <div class="overlay-content">
+                       <h3>Blog Website</h3>
+                       <p><a href="#">Click here</a> for details</p>
+              </div>
+                   </div> 
+             </li>  
+            </ul>
+            <ul class="portfolio-nav">
+                <li id="prev">&lt;</li>
+                <li id="next">&gt;</li>
+            </ul>
+            </div>
+         </div>
+         </div>
+          </div>     
+    </section> 
+    
+   <section class="team section-padding" data-stellar-background-ratio="0.5" id="team">
+          <div class="team-header">
+           <h1>Our Team</h1>
+            <p>It is a long established fact that a reader will be distracted by the <br/> readable content of a page when looking at its layout.</p>
+        </div>
+    
+        <div class="container">
+        <div class="row">
+             <div class="animation" data-animation="zoomin">
+         <ul class="team-carousel">   
+          <li>
+            <div class="inner-content">
+              <img src="img/team/member1.png">
+                   <div class="overlay-content white">
+                      <p class="name primary bold">John</p>
+                      <p class="position secondary-sky-blue bold">Web Developer</p>
+                      <p class="description">The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                       <ul class="member-social-links">
+                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>      
+              </div>
+                   </div> 
+             </li>
+             <li>
+              
+            <div class="inner-content">
+              <img src="img/team/member2.png">
+                   <div class="overlay-content white">
+                      <p class="name primary bold">Christina</p>
+                      <p class="position secondary-sky-blue bold">Web Designer</p>
+                      <p class="description">The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                       <ul class="member-social-links">
+                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>    
+              </div>
+                   </div> 
+              </li>
+             <li>
+            <div class="inner-content">
+              <img src="img/team/member3.png">
+                   <div class="overlay-content white">
+                      <p class="name primary bold">Alex</p>
+                      <p class="position secondary-sky-blue bold">UI/UX Designer</p>
+                      <p class="description">The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                       <ul class="member-social-links">
+                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>    
+              </div>
+                   </div> 
+              </li>
+             <li>
+            <div class="inner-content">
+              <img src="img/team/member4.png">
+                   <div class="overlay-content white">
+                      <p class="name primary bold">Rob</p>
+                      <p class="position secondary-sky-blue bold">Front End Developer</p>
+                      <p class="description">The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                       <ul class="member-social-links">
+                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>    
+              </div>
+                   </div> 
+             </li>
+             <li>
+            <div class="inner-content">
+              <img src="img/team/member1.png">
+                   <div class="overlay-content white">
+                      <p class="name primary bold">John</p>
+                      <p class="position secondary-sky-blue bold">Web Developer</p>
+                      <p class="description">The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                       <ul class="member-social-links">
+                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>    
+              </div>
+                   </div> 
+             </li>
+             <li>
+            <div class="inner-content">
+              <img src="img/team/member2.png">
+                   <div class="overlay-content white">
+                      <p class="name primary bold">Christina</p>
+                      <p class="position secondary-sky-blue bold">Web Designer</p>
+                      <p class="description">The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                       <ul class="member-social-links">
+                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>    
+              </div>
+                   </div> 
+             </li>
+             <li>
+            <div class="inner-content">
+              <img src="img/team/member3.png">
+                  <div class="overlay-content white">
+                      <p class="name primary bold">Alex</p>
+                      <p class="position secondary-sky-blue bold">UI/UX Designer</p>
+                      <p class="description">The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                       <ul class="member-social-links">
+                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>    
+                </div>
+               </div>
+              </li>
+             <li>
+            <div class="inner-content">
+              <img src="img/team/member4.png">
+                   <div class="overlay-content white">
+                      <p class="name primary bold">Rob</p>
+                      <p class="position secondary-sky-blue bold">Front End Developer</p>
+                      <p class="description">The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                       <ul class="member-social-links">
+                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                 </ul>    
+                </div>
+               </div> 
+              </li>
+            </ul>
+          
+            <ul class="team-nav">
+                <li id="team-prev">&lt;</li>
+                <li id="team-next">&gt;</li>
+            </ul>
+          </div>       
+        </div>
+       </div> 
+    </section> 
+    <section class="testimonials section-padding center animation" data-stellar-background-ratio="0.5" data-animation="fadeInUp" id="testimonials">
+          <div class="testimonials-header">
+           <h1 class="white">Client Testimonials</h1>
+            <p>It is a long established fact that a reader will be distracted by the <br/> readable content of a page when looking at its layout.</p>
+        </div>
+            <ul class="testimonial-carousel">
+                <li>
+                <img src="img/team/member1.png"/>
+                <p class="name primary bold">John</p>
+                      <p class="position secondary-sky-blue bold">Web Developer</p>
+                      <blockquote>
+                          <i>The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for "lorem ipsum" will uncover many web sites still in their infancy.</i>
+                    </blockquote>
+                </li>
+                 <li>
+                <img src="img/team/member2.png"/>
+                <p class="name primary bold">Christina</p>
+                      <p class="position secondary-sky-blue bold">Web Designer</p>
+                      <blockquote>
+                          <i>The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for "lorem ipsum" will uncover many web sites still in their infancy.</i>
+                    </blockquote>
+                </li>
+                 <li>
+                <img src="img/team/member3.png"/>
+                <p class="name primary bold">Alex</p>
+                      <p class="position secondary-sky-blue bold">UI/UX Designer</p>
+                      <blockquote>
+                          <i>The point of using lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for "lorem ipsum" will uncover many web sites still in their infancy.</i>
+                    </blockquote>
+                </li>
+        </ul>
+        <ul class="testipager">
+        <li>
+            <a href="#"><i class="fa fa-circle-o"></i></a>
+            </li>
+            <li>
+            <a href="#"><i class="fa fa-circle-o"></i></a>
+            </li>
+             <li>
+            <a href="#"><i class="fa fa-circle-o"></i></a>
+            </li>
+        </ul>
+    </section> 
+     <section class="blog section-padding blog" data-stellar-background-ratio="0.5" id="blog">
+          <div class="blog-header center">
+           <h1>Recent Posts from Blog</h1>
+            <p>It is a long established fact that a reader will be distracted by the <br/> readable content of a page when looking at its layout.</p>
+        </div>
+         <div class="container">
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="animation" data-animation="fadeInLeft">
+                <img src="img/blog/post1.png" alt="post1" class="img-responsive"/>
+                <h3 class="secondary-sky-blue">Water Flowing</h3>
+                 <p class="post-description"><i>by</i><b><span class="primary">John</span></b><i>on</i><b class="date">10 Oct 2017</b></p>
+             </div>
+               </div>  
+             <div class="col-md-4">
+                 <div class="animation" data-animation="fadeInLeft">
+                <img src="img/blog/post2.png" alt="post2" class="img-responsive"/>
+                <h3 class="secondary-sky-blue">Awesome City</h3>
+                 <p class="post-description"><i>by</i><b><span class="primary">John</span></b><i>on</i><b class="date">10 Oct 2017</b></p>
+             </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="animation" data-animation="fadeInLeft">
+                <img src="img/blog/post3.png" alt="post3" class="img-responsive"/>
+                <h3 class="secondary-sky-blue">Beautiful Sky</h3>
+                   <p class="post-description"><i>by</i><b><span class="primary">John</span></b><i>on</i><b class="date">10 Oct 2017</b></p>
+             </div>
+             </div>
+         </div>
+           </div>  
+    </section>
+    <section class="section-padding contact" data-stellar-background-ratio="0.5" id="contact">
+          <div class="contact-header center">
+       <h1 class="white">Contact Us</h1>
+            <p>It is a long established fact that a reader will be distracted by the <br/> readable content of a page when looking at its layout.</p>
+        </div>
+           <form class="contact-form animation" data-animation="zoomIn">
+    <fieldset>
+        <input type="text" id="name" placeholder="Name">
+    </fieldset>
+    <fieldset>
+        <input type="email" id="email" placeholder="Email">
+    </fieldset>
+    <fieldset>
+        <input type="text" id="subject" placeholder="Subject">
+    </fieldset>
+    <fieldset>
+        <textarea rows="7" cols="30" id="message" placeholder="Message"></textarea>
+     </fieldset>
+    <fieldset>
+        <input type="submit" id="submit" value="Submit">
+    </fieldset>    
+         </form>
+          <br/>
+       <p class="result"></p> 
+    </section>
+    
+    <footer> 
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+             <div class="animation" data-animation="fadeInLeft">
+            <h1>About Corporate</h1>
+            <p class="about">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <p><i class="fa fa-envelope"></i><span class="contact-email">corporate@email.com</span></p>
+            <p><i class="fa fa-mobile"></i><span class="contact-phone">123-456-7890</span></p>
+            <p><i class="fa fa-location-arrow"></i><span class="contact-location">678 Busy Lane, New York City, NY 12345</span></p>
+        </div>
+            </div>
+        <div class="col-md-4">
+             <div class="animation" data-animation="fadeInLeft">
+            <h1>Blog Updates</h1>
+                 
+             <form class="update-form">
+                 <fieldset>
+        <input type="text" id="take-email" placeholder="Enter your email here">
+    </fieldset>  
+             <fieldset>
+        <input type="submit" id="submit-button" value="Sign-Up">
+    </fieldset>
+            </form>
+        </div>
+         </div>   
+        <div class="col-md-4">
+             <div class="animation" data-animation="fadeInLeft">
+            <h1>Stay in Touch</h1>
+            <ul class="footer-social-links">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>    
+             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>   
+             <li><a href="#"><i class="fa fa-dribbble"></i></a></li>   
+             <li><a href="#"><i class="fa fa-youtube"></i></a></li>   
+            </ul>
+        </div>
+        </div>
+        </div>
+        <footer>        
+        <div class="copyright">
+        <p>Copyright &copy;<span class="primary"></span> Corporate 2017. All Rights Reserved.</p>
+        </div>
+        </footer>
+        
+    <! --javascripts -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript" src="js/stellar.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>    
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>    
+         
+</div>    
+</body>
+</html>
