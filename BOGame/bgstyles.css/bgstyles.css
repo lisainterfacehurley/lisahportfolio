@@ -1,0 +1,40 @@
+* {
+	padding: 0;
+	margin: 0;
+} 
+
+h1{
+    font-size: 60px;
+    font-style: oblique;
+    color: rgb(12, 0, 127);
+    text-align: center;
+}
+h2{
+    font-size: 42px;
+    font-style: oblique;
+    color: rgb(12, 0, 127);
+    text-align: center;
+}
+#myCanvas {
+	background-color: rgba(76, 167, 255, 0.6);
+	display: block;
+	margin: 0 auto;
+    border-style: ridge;
+    border-width: 18px;
+    border-color: rgb(15, 0, 127);
+}
+a{
+               text-decoration: none;
+               background-color: rgb(76, 167, 255);
+               font-size: 23.2px;
+               color: rgb(12, 0, 127);
+               border-style: ridge;
+               border-width: 6px;
+               border-color: rgb(12, 0, 127);
+               padding-left: 2px;
+               padding-right: 2px;
+               position: absolute;
+               bottom: 0;
+               left: 0;
+          }        
+    
