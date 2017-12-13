@@ -1,0 +1,74 @@
+     body{
+             margin: 0;
+             color: rgb(245,245,245);
+        }
+        header{
+             background-color: rgb(172, 211, 115);
+             height: 10vh;
+        
+      }
+        #logo{
+             height: 7vh;
+             margin-left: 5vw;
+             margin-top: 1.5vh;
+             
+      }
+        nav{
+            background-color: rgb(137, 168, 92);
+            height: 10vh;
+            width: 10vh;
+            position: absolute;
+            top: 0;
+            right: 0;
+                                  
+     }
+        menu{
+            height: 4vh;
+            width: 4vw;
+            margin-top: 3vh;
+            margin-left: 3vh;
+            
+        }
+        main{
+            background-color: rgb(154,189,103);
+            background-image: url("../SixteenM/images/4siluetBG.png");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100%;
+            height: 90vh;
+            text-align: center;
+                   
+     }
+        h1{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 5vmin; 
+            margin-top: 25vh;
+            
+    }
+        h2{
+            font-family: 'Droid Serif', serif;
+            font-size: 3.5vmin;
+            font-style: italic;
+            font-weight:normal;
+            
+    }
+        #Arrow{ 
+            height: 3vh;
+            margin-top: 5vh;
+            
+    }
+#ahome{
+               text-decoration: none;
+               background-color: rgb(154,189,103);
+               font-size: 23.2px;
+               color: white;
+               border-style: ridge;
+               border-width: 6px;
+               border-color: rgb(172, 211, 115);
+               font-family:  "Droid Serif";
+               padding-left: 2px;
+               padding-right: 2px;
+               position:absolute;     
+               bottom: 0;
+               right: 0; 
+            } 
